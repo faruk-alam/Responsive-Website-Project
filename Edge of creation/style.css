@@ -1,0 +1,270 @@
+/* basic style */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&family=Raleway&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  text-align: center;
+}
+/* header start here */
+/* styling logo and navbar */
+header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0.1em;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul li{
+  display: inline-block;
+  margin: 0.8em;
+}
+header nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #01FE6D;
+}
+header nav ul li a:hover{
+  color: #fff;
+}
+/* making header and navbar responsive */
+@media (min-width:768px){
+  header img{
+    float: left;
+  }
+  header nav{
+    float: right;
+  }
+  header nav ul{
+    margin-right: 2.5em;
+  }
+  header nav ul li{
+    margin-top: 2.9em;
+    margin-left: 1.2em;
+  }
+  header nav ul li a{
+    font-size: 1.3em;
+}
+}
+/* Styling title */
+.home-hero{
+  background-image: url(images/laptop1.jpg);
+  padding : 12em;
+}
+
+.home-hero h1{
+  font-size: 1.8em;
+  color: #27b4eb;
+}
+.home-hero span{
+  font-size: 1em;
+  color: #e925bf;
+}
+
+.home-hero a{
+  display: inline-block;
+  font-size: 1.2em;
+  color: #01FE6D;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.05em solid ;
+  padding: 0.5em;
+}
+
+.home-hero a:hover{
+  color: #fff;
+  border: 0.08em solid #fff;
+}
+/* Making title responsive */
+@media screen and (min-width:768px){
+  .home-hero {
+    height: 100vh;
+    padding-top: 20vh;
+
+  }
+  .home-hero h1{
+    font-size: 3.8em;  
+}
+  .home-hero h1 span{
+    font-size: 1em;
+}
+}
+
+.about-text{
+  background-color: #313030;
+  color: #fff;
+  width: 100vw; 
+  margin-left: -1.25%;
+  padding: 3em;
+  outline: 2px solid #01FE6D;
+  outline-offset: -2.5em;
+  position: relative;
+}
+.about-text h1{
+  color: #01FE6D;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding:0 0.5em;
+  background-color: #313030;
+}
+/* Styling portfoglio  */
+.project-portfolio{
+  margin: 0 auto;
+}
+.port-item{
+  margin: 0 ;
+  position: relative;
+}
+.port-item figure img{
+  display: block;
+}
+.project-details{
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 25px;
+  z-index: 100;
+  left: 0;
+  left: 0;
+  bottom: 0;
+}
+.port-item figcaption p{
+  font-size:  1.5em;
+  font-weight: bolder;
+  color: #f12f2f;
+}
+.project-details a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #01FE6D;
+  border: 2px solid #01FE6D;
+  padding: 2px 6px;
+  overflow: hidden;
+}
+.project-details a:hover{
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* Making portfoglio responsive */
+@media (min-width:580px){
+  .port-item{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+  .project-details{
+    transform: translateY(150%);
+  }
+  .port-item:hover  .project-details{
+    transform: translateY(0);
+  }
+}
+@media (min-width:972px){
+  .port-item{
+    width: 33.333333%;
+    overflow: hidden;
+  }
+  .project-details{
+    transform: translateY(150%);
+  }
+  .port-item:hover  .project-details{
+    transform: translateY(0);
+  }
+}
+.clearfix::after,
+.section::after{
+  content: ".";
+  display: table;
+  clear: both;
+
+}
+.hire{
+  padding-top: 3em;
+  padding-bottom: 1em;
+  background: #01FE6D;
+}
+.hire
+ h1{
+  font-size: 2.8em;
+  color: #080a0a;
+}
+.hire
+ span{
+  font-size: 0.8em;
+  color: #5c6469f5;
+}
+
+.hire
+ a{
+  display: inline-block;
+  font-size: 1.2em;
+  color: #9D5DE1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.05em solid ;
+  padding: 0.5em;
+}
+
+.hire
+ a:hover{
+  color: crimson;
+  border: 0.08em solihire
+}  
+/* styling footer */
+footer{
+  background: url("images/device.jpg");
+  color: #01FE6D;
+  padding: 0.05em 0;
+
+}
+footer ul{
+  list-style: none;
+}
+footer strong{
+  color: #27b4eb;
+}
+
+[class^=col-]{
+  float: left;
+}
+.clearfix::after,
+footer::after{
+  content: ".";
+  display: table;
+  clear: both;
+}
+.col-3{
+  width: 50%;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.col-1{
+  width: 16.666666%;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+}
+/* making footer responsive */
+@media (max-width:972px){
+  .col-3{
+    width: 100%;
+  }
+  .col-1{
+    width: 33.33333%;
+  }
+}
+@media (max-width:580px){
+  .col-1{
+    width: 100%;
+  }
+}
